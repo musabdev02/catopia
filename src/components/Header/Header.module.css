@@ -11,3 +11,12 @@ nav{
 .nav_ctas a{display: flex; gap: 6px; cursor: pointer; color: var(--txt-color); text-decoration: none; color: var(--txt-color);}
 .nav_ctas svg{width: 22px; color: var(--txt-color);}
 .nav_ctas p{cursor: pointer; color: var(--txt-color);}
+
+@media screen and (max-width: 600px) {
+    .nav_ctas a span{display: none;}
+    .nav_ctas svg{width: 26px; height: 26px;}
+    nav{
+        padding: 24px 0px;
+    }
+    .logo img{width: 37px;}
+}

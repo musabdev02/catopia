@@ -23,3 +23,14 @@
     position: absolute;
     left: 45%;
 }
+
+@media screen and (max-width: 999px){
+    .randomCats{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+@media screen and (max-width: 750px){
+    .randomCats img{
+        aspect-ratio: .5/.4;
+    }
+}

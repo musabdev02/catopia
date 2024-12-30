@@ -10,13 +10,15 @@
   --hero-bg: linear-gradient(to bottom, #ffd0c1, #E7E6FB);
   --hover-color: #fff0e7;
   --border-color: #dbdbdb;
+  --nav-border: #dbdbdb;
 }
 [data-theme="dark"]{
   --bg-color: #292828;
   --txt-color: #fff;
   --hero-bg: linear-gradient(to bottom, #ff6939, #441818);
   --hover-color: #714023;
-  --boder-color: #454545;
+  --border-color: #636363;
+  --nav-border: #4f4f4f;
 }
 body{
   width: 100%;
@@ -31,3 +33,16 @@ body{
 }
 .dp_flex{display: flex; align-items: center;}
 button{font-family: "Poppins", sans-serif;}
+
+@media screen and (max-width: 1250px) {
+  .container{
+    width: 999px;
+  }
+}
+@media screen and (max-width: 999px) {
+  .container{width: 80%;}
+  
+}
+@media screen and (max-width: 500px) {
+  .container{width: 90%;}
+}

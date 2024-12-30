@@ -11,3 +11,26 @@
 .hero_content p{margin-block-start: 19px; font-size: 21px; color: var(--txt-color);}
 .hero_img{width: 50%;}
 .hero_img img{width: 100%;}
+
+@media screen and (max-width: 999px) {
+  #hero{height: 55vh;}
+  .hero_content h1{
+    font-size: 64px;
+  }
+  .hero_img img{
+    height: 350px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 750px) {
+    .hero_content h1{font-size: 42px;}
+    .hero_content p{font-size: 16px;}
+    .hero_img img{height: 100%; object-fit: inherit;}
+}
+@media screen and (max-width: 500px) {
+  #hero{height: 60vh;}
+  .hero_sec{flex-direction: column; align-items: start; gap: 24px 0px;}
+  .hero_img,
+  .hero_content{width: 100%; text-align: center;}
+  .hero_content{margin-block-start: 24px;}
+}
