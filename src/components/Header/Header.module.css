@@ -1,0 +1,6 @@
+nav{
+    padding: 24px;
+}
+.logo{display: flex; align-items: center; gap: 9px;}
+.logo img{width: 50px;}
+.logo h3{font-size: 21px; font-weight: 400; color: #FF914C;}
