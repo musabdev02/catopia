@@ -1,4 +1,5 @@
 import styles from './Navigation.module.css';
+import RandomCat from '../RandomCat/RandomCat';
 
 const Navigation = () => {
 
@@ -9,6 +10,7 @@ const Navigation = () => {
             <button>Cats Fun Facts</button>
             <button>Generate Cat Names</button>
         </div>
+        <RandomCat />
     </>
     )
 };
