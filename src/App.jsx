@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import Navigation from "./components/Navigation/Navigation";
 
 function App() {
 
@@ -9,6 +10,9 @@ function App() {
        <Header />
      </div>
        <Hero />
+      <div className="container">
+        <Navigation />
+      </div>
     </>
   )
 }

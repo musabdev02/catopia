@@ -1,0 +1,18 @@
+.navigation{ width: 80%;margin: 54px auto; text-align: center; display: flex; justify-content: space-between; gap: 24px; border: 1px solid #dbdbdb; padding: 6px; border-radius: 24px;}
+.navigation button{
+    padding: 12px 44px;
+    font-size: 17px;
+    border-radius: 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+.navigation button:hover{
+    background: #fff0e7;
+}
+.navActive{
+    background: #ff914c !important;
+    color: #fff;
+}
