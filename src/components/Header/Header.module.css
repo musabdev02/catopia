@@ -1,6 +1,13 @@
 nav{
     padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .logo{display: flex; align-items: center; gap: 9px;}
 .logo img{width: 50px;}
 .logo h3{font-size: 21px; font-weight: 400; color: #FF914C;}
+.nav_ctas{display: flex; gap: 24px;}
+.nav_ctas a{display: flex; gap: 6px; cursor: pointer; color: #000; text-decoration: none;}
+.nav_ctas svg{width: 22px;}
+.nav_ctas p{cursor: pointer;}
