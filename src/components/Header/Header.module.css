@@ -6,8 +6,8 @@ nav{
 }
 .logo{display: flex; align-items: center; gap: 9px;}
 .logo img{width: 50px;}
-.logo h3{font-size: 21px; font-weight: 400; color: #FF914C;}
+.logo h3{font-size: 21px; font-weight: 400; color: var(--txt-color);}
 .nav_ctas{display: flex; gap: 24px;}
-.nav_ctas a{display: flex; gap: 6px; cursor: pointer; color: #000; text-decoration: none;}
-.nav_ctas svg{width: 22px;}
-.nav_ctas p{cursor: pointer;}
+.nav_ctas a{display: flex; gap: 6px; cursor: pointer; color: var(--txt-color); text-decoration: none; color: var(--txt-color);}
+.nav_ctas svg{width: 22px; color: var(--txt-color);}
+.nav_ctas p{cursor: pointer; color: var(--txt-color);}

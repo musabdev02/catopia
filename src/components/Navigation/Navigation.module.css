@@ -8,11 +8,12 @@
     cursor: pointer;
     font-weight: 600;
     transition: 0.2s ease;
+    color: var(--txt-color);
 }
 .navigation button:hover{
-    background: #fff0e7;
+    background: var(--hover-color);
 }
 .navActive{
     background: #ff914c !important;
-    color: #fff;
+    color: #fff !important;
 }
