@@ -1,0 +1,13 @@
+#hero{
+    background: linear-gradient(to bottom, #ffd0c1, #E7E6FB);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.hero_sec{display: flex; align-items: center; justify-content: space-between;}
+.hero_content{width: 50%;}
+.hero_content h1{font-size: 74px; font-weight: 500; line-height: 1.2;}
+.hero_content p{margin-block-start: 19px; font-size: 21px;}
+.hero_img{width: 50%;}
+.hero_img img{width: 100%;}
