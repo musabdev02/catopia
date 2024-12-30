@@ -2,8 +2,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 10px;
-    /* padding: 20px; */
-    /* overflow: hidden; */
+    position: relative;
 }
 .randomCats img {
     width: 100%;
@@ -17,4 +16,10 @@
 }
 .randomCats img:hover{
     transform: scale(105%);
+}
+.loader{
+    border: none !important;
+    width: 99px !important;
+    position: absolute;
+    left: 45%;
 }
