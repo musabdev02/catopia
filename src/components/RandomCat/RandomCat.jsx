@@ -26,7 +26,7 @@ const RandomCat = () => {
             {
                 isLoading ? <img src={loader} className={styles.loader} />
                     :
-                catGallery.map((element, i) => <img onClick={copyImage} key={i} src={element.url} alt={element.id} />)
+                catGallery.map((element, i) => <img key={i} src={element.url} alt={element.id} />)
             }
         </div>
     )
