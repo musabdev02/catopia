@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Navigation from "./components/Navigation/Navigation";
@@ -11,7 +11,10 @@ function App() {
     setIsDark(!isDark)
     localStorage.setItem("theme", isDark ? "dark" : "light");
   };
-  document.body.setAttribute("data-theme",  savedTheme);
+  useEffect(() => {
+    savedTheme === "dark" ? setIsDark(false) : setIsDark(true);
+    document.body.setAttribute("data-theme",  savedTheme);
+  })
   return (
     <>
     <div className="container">
