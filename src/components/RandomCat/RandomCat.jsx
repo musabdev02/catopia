@@ -23,10 +23,11 @@ const RandomCat = () => {
 
     return (
         <div className={styles.randomCats}>
+            
             {
                 isLoading ? <img src={loader} className={styles.loader} />
                     :
-                catGallery.map((element, i) => <img key={i} src={element.url} alt={element.id} />)
+                catGallery.map((element, i) =><img key={i} src={element.url} alt={element.id} />)
             }
         </div>
     )

@@ -4,14 +4,48 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-.logo{display: flex; align-items: center; gap: 9px;}
-.logo img{width: 50px;}
+.logo{display: flex; align-items: center; gap: 9px; cursor: pointer;}
+.logo img{width: 45px; border-radius: 10%;}
 .logo h3{font-size: 21px; font-weight: 400; color: var(--txt-color);}
 .nav_ctas{display: flex; gap: 24px;}
 .nav_ctas a{display: flex; gap: 6px; cursor: pointer; color: var(--txt-color); text-decoration: none; color: var(--txt-color);}
 .nav_ctas svg{width: 22px; color: var(--txt-color);}
 .nav_ctas p{cursor: pointer; color: var(--txt-color);}
 
+/* popup */
+.popUp_container{
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popUp{
+    width: 600px;
+    height: 700px;
+    background: var(--bg-color);
+    border-radius: 8px;
+    padding: 44px;
+    overflow-y: scroll;
+    position: relative;
+}
+.popUp::-webkit-scrollbar{display: none;}
+.popUp .cross{position: absolute; top: 5%; right: 5%;}
+.popUp svg{width: 24px; color: var(--txt-color); cursor: pointer;}
+.popUp img{width: 120px;}
+.popUp h2{color: gray; margin-block-start: 24px; text-transform: uppercase;}
+.popUp h3{font-size: 34px; color: var(--txt-color); font-weight: 700; margin-block-start: 14px;}
+.popUp h4{color: gray; font-weight: 500; text-transform: uppercase;}
+.popUp p{color: var(--txt-color); margin-block-start: 14px; line-height: 1.9;}
+.popUp p span{color: yellow;}
+.gallery{margin-block-start: 24px; display: flex; gap: 14px; flex-wrap: wrap;}
+.gallery img{width: 150px; height: 150px; object-fit: cover; border-radius: 8px; }
+.gallery video{width: 150px; height: 150px; object-fit: cover; border-radius: 8px;}
 @media screen and (max-width: 600px) {
     .nav_ctas a span{display: none;}
     .nav_ctas svg{width: 26px; height: 26px;}
@@ -19,4 +53,9 @@ nav{
         padding: 24px 0px;
     }
     .logo img{width: 37px;}
+    .popUp{width: 95%; padding: 30px;}
+}
+@media screen and (max-width: 500px) {
+    .gallery{justify-content: center;}
+    .gallery img, .gallery video{width: 45%;}
 }
