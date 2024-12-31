@@ -1,0 +1,35 @@
+.catFact{display: flex; flex-wrap: wrap; gap: 0px 10px; justify-content: center; position: relative; align-items: baseline;}
+.catFact_card{
+    width: 350px;
+    max-height: 350px;
+    overflow-y: scroll;
+    border-radius: 6px;
+    padding: 29px;
+    background: #f3f3f3;
+    border: 1px solid #cbcbcb;
+    color: var(--txt-color);
+    margin-block-end: 40px;
+    position: relative;
+}
+.catFact_card::-webkit-scrollbar{display: none;}
+.catFact_card p{font-size: 17px; line-height:1.9; margin-block-start: 44px; }
+.catFact_card span{
+    content: "";
+    position: absolute;
+    top: 4%;
+    left: 8%;
+    font-size: 40px;
+    color: gray;
+}
+.options{
+    margin-block-start: 24px;
+    display: flex;
+    justify-content: end;
+}
+.options svg{width: 24px; cursor: pointer; color: var(--txt-color);}
+.loader{
+    border: none !important;
+    width: 99px !important;
+    position: absolute;
+    left: 45%;
+}
