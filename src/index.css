@@ -11,6 +11,7 @@
   --hover-color: #fff0e7;
   --border-color: #dbdbdb;
   --nav-border: #dbdbdb;
+  --card-color: #F3F3F3;
 }
 [data-theme="dark"]{
   --bg-color: #292828;
@@ -19,6 +20,7 @@
   --hover-color: #714023;
   --border-color: #636363;
   --nav-border: #4f4f4f;
+  --card-color: #232323;
 }
 body{
   width: 100%;

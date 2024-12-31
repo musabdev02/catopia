@@ -5,8 +5,8 @@
     overflow-y: scroll;
     border-radius: 6px;
     padding: 29px;
-    background: #f3f3f3;
-    border: 1px solid #cbcbcb;
+    background: var(--card-color);
+    border: 1px solid gray;
     color: var(--txt-color);
     margin-block-end: 40px;
     position: relative;
@@ -32,4 +32,10 @@
     width: 99px !important;
     position: absolute;
     left: 45%;
+}
+
+@media screen and (max-width: 500px) {
+    .catFact_card{
+        margin-block-end: 20px;
+    }
 }
