@@ -27,6 +27,7 @@ body{
   height: 100%;
   font-family: "Poppins", serif;
   background: var(--bg-color);
+  transition: 0.3s;
 }
 /* reuseabale */
 .container{

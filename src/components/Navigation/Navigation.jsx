@@ -8,7 +8,7 @@ const Navigation = () => {
     const handleClick = (buttonName) =>{
         setActiveButton(buttonName);
     };
-    let content = "";
+    let content = <h3 style={{textAlign: "center", color: "var(--txt-color)"}}>Coming Soon..!</h3>;
     if(activeButton === "Random Cats"){
         content = <RandomCat />;
     }else if(activeButton === "Cats Fun Facts"){

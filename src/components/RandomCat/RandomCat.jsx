@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import styles from './RandomCat.module.css';
 import { useState } from 'react';
-import loader  from './loader.svg';
+import loader from './loader.svg';
 
 
 const RandomCat = () => {
@@ -24,9 +24,9 @@ const RandomCat = () => {
     return (
         <div className={styles.randomCats}>
             {
-               isLoading ? <img src={loader} className={styles.loader}/>
-               :
-               catGallery.map((element, i) => <img key={i} src={element.url} alt={element.id}/>)
+                isLoading ? <img src={loader} className={styles.loader} />
+                    :
+                catGallery.map((element, i) => <img onClick={copyImage} key={i} src={element.url} alt={element.id} />)
             }
         </div>
     )

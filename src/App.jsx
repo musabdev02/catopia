@@ -6,10 +6,12 @@ import Navigation from "./components/Navigation/Navigation";
 function App() {
   const [isDark, setIsDark] = useState(true);
 
+  const savedTheme = localStorage.getItem("theme") || "light";
   const changeMode = () => {
     setIsDark(!isDark)
-    document.body.setAttribute("data-theme",  isDark ? "dark" : "light"); 
+    localStorage.setItem("theme", isDark ? "dark" : "light");
   };
+  document.body.setAttribute("data-theme",  savedTheme);
   return (
     <>
     <div className="container">
