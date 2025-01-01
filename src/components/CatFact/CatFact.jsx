@@ -8,7 +8,7 @@ const CatFact = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   const getData = async () => {
-    const raw = await fetch("https://meowfacts.herokuapp.com/?count=12");
+    const raw = await fetch("https://meowfacts.herokuapp.com/?count=20");
     const data = await raw.json();
     setCatFacts(data);
     setIsLoading(false)

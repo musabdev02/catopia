@@ -1,6 +1,9 @@
-.catFact{display: flex; flex-wrap: wrap; gap: 0px 10px; justify-content: center; position: relative; align-items: baseline;}
+.catFact{
+
+    column-width: 300px;
+}
 .catFact_card{
-    width: 350px;
+    width: 100%;
     max-height: 350px;
     overflow-y: scroll;
     border-radius: 6px;
@@ -8,7 +11,7 @@
     background: var(--card-color);
     border: 1px solid gray;
     color: var(--txt-color);
-    margin-block-end: 40px;
+    margin-block-end: 20px;
     position: relative;
 }
 .catFact_card::-webkit-scrollbar{display: none;}
@@ -32,10 +35,4 @@
     width: 99px !important;
     position: absolute;
     left: 45%;
-}
-
-@media screen and (max-width: 500px) {
-    .catFact_card{
-        margin-block-end: 20px;
-    }
 }
