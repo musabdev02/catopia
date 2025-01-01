@@ -9,7 +9,7 @@ const RandomCat = () => {
     const [isLoading, setIsLoading] = useState(true);
     const getData = async () => {
         try {
-            const getData = await fetch("https://api.thecatapi.com/v1/images/search?limit=10");
+            const getData = await fetch("https://api.thecatapi.com/v1/images/search?limit=20");
             const data = await getData.json();
             setCatGallery(data);
             setIsLoading(false)
